@@ -343,6 +343,7 @@ main .main-content .student-details .header {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    margin-left: 5px;
 }
 
 
@@ -350,7 +351,6 @@ main .main-content .student-details .header {
 .learning-details .box {
     display: flex;
     height: 200px;
-    width: calc((100% / 3));
     background-color: white;
     padding: 30px;
     justify-content: center;
@@ -427,6 +427,7 @@ main .main-content .student-details .header {
     margin-right: 0;
     width: 100%;
     margin-top: 0;
+    justify-content: flex-start;
 }
 
 .learning-details .box:not(:last-child) {
@@ -435,6 +436,7 @@ main .main-content .student-details .header {
 
 .learning-details {
     flex-direction: column;
+    margin-right: 5px;
 }
 }
 
