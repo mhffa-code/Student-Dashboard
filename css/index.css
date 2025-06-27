@@ -1,0 +1,462 @@
+:root {
+    --main-color : #309cec;
+    --second-color : #82c610;
+    --third-color :#ffae38;
+    --danger-color :#ff4240;
+    --font-color : #323a3e;
+    --bg-color : #f8f8f8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 250px);
+    height: 100px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 30px;
+    background-color: var(--bg-color);
+    z-index: 100000;
+}
+
+header .form-control {
+    border-radius: 20px;
+    margin-right: 10px;
+    width: 500px;
+}
+
+header form .btn {
+    border-radius: 15px;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+header img {
+    WIDTH: 35px;
+    BORDER-RADIUS: 50%;
+}
+
+header .profile {
+    display: flex;
+    align-items: center;
+}
+
+header .profile .name {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+/* header responsive */
+@media (max-width : 992px) {
+    header .form-control {
+    width: 200px;
+}
+header .profile  {
+    font-size: 16px;
+    display: none;
+}
+
+header {
+    width: 100%;
+}
+
+}
+/* header responsive */
+
+
+.sidebar {
+    position: sticky;
+    width: 250px;
+    background-color: white;
+    padding: 30px;
+    top: 0;
+   min-height: 100vh;
+   height: 100vh;
+   border-top-right-radius: 20px;
+
+}
+
+
+
+
+.sidebar .title {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .title i.fa-pagelines {
+    font-size: 32px;
+    color: var(--main-color);
+    margin-right: 5px;
+}
+
+.fa-xmark {
+    margin-left: 30px;
+    color: #9f9f9f;
+    cursor: pointer;
+    display: none;
+}
+
+.sidebar .title h3 {
+    color: #3e464d;
+}
+
+.sidebar .taps {
+    margin-top: 50px;
+}
+
+.sidebar .taps a 
+{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: var(--font-color);
+    text-decoration: none;
+    width: 200px;
+     border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+.sidebar .taps a.active {
+    background-color: var(--main-color);
+    border-radius: 20px;
+    color: white;
+    margin-left: 10px;
+}
+
+.sidebar .taps a:hover {
+    background-color: var(--main-color);
+    color: white;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.sidebar .taps a span {
+    margin-left: 10px;
+}
+
+.fa-bars {
+    display: none;
+}
+
+
+
+/* sidebar responsive */
+@media (max-width : 992px) {
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    z-index: 2000000000000;
+    transition: 0.3s;
+  } 
+  
+  .fa-xmark {
+    display: inline;
+  }
+
+  .sidebar.active {
+    left: 0;
+    box-shadow: 0 0 45px 0 var(--main-color);
+  } 
+
+  .fa-bars {
+    display: inline-block;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+}
+/* sidebar responsive */
+
+
+main {
+    display: flex;
+}
+
+main .main-content {
+    margin-top: 100px;
+    padding: 0 30px 30px;
+    width: 100%;
+}
+
+main .main-content .student-details {
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+main .main-content .student-details .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .main-content .student-details .header .right {
+    display: flex;
+    align-items: center;
+
+}
+
+main .main-content .student-details .header .right .btn {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+main .main-content .student-details .header .right .btn i {
+    margin-right: 5px;
+}
+
+
+.student-data {
+    display: flex;
+    align-items: center;
+    margin:30px 0 ;
+}
+
+.student-data .data {
+    margin-left: 50px;
+}
+
+.student-data .data h3 {
+    color: #3e464d;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.student-data img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+.student-data span {
+    display: block;
+}
+
+.student-data span.head {
+    color: #b2b4b5;
+}
+
+.student-data .registration-data {
+    display: flex;
+    justify-content: space-around;
+}
+
+.student-data .registration-data .prop {
+    margin-right: 60px;
+    white-space: nowrap;
+    padding: 20px;
+    background-color: var(--bg-color);
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.student-data .class-days {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color);
+    height: 116px;
+    padding: 30px;
+}
+
+.student-data .class-days {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+
+.student-data .class-days h3 {
+    font-size: 20px;
+}
+
+.student-data .class-days > span {
+    display: flex;
+}
+
+/* .student-details responsive */
+@media (max-width : 992px) {
+
+main .main-content .student-details .header {
+    flex-direction: column;
+}
+
+
+.student-data {
+    flex-direction: column
+}
+
+.student-data .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+}
+
+.student-data .data  h3 {
+    margin: 20px 0;
+}
+ 
+.student-data .registration-data .prop {
+    margin-bottom: 10px;
+}
+
+
+}
+
+@media (min-width : 1400px) {
+    .student-data .registration-data .prop {
+        background-color: white;
+    }
+}
+/* .student-details responsive */
+
+.learning-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+
+.learning-details .box {
+    display: flex;
+    height: 200px;
+    width: calc((100% / 3));
+    background-color: white;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.learning-details .box {
+    margin-right: 20px;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+.learning-details .box i {
+    font-size: 25px;
+}
+
+.learning-details .box .icon {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.learning-details .box.attendence i {
+    color: var(--second-color);
+}
+.learning-details .box.attendence .icon {
+    background-color: #82c61040;
+}
+
+.learning-details .box.absent i {
+    color: var(--danger-color);
+}
+.learning-details .box.absent .icon {
+    background-color: #ff42404a;
+}
+
+.learning-details .box.courses i {
+    color: var(--main-color);
+}
+.learning-details .box.courses .icon {
+    background-color: #309cec40;
+}
+.learning-details .box.class-days i {
+    color: var(--third-color);
+}
+.learning-details .box.class-days .icon {
+    background-color: #ffae384a;
+}
+
+
+
+.learning-details .box .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.learning-details .box .right h3 {
+    font-size: 20px;
+    color: #657881;
+}
+
+.learning-details .box .right span {
+    font-size: 32px;
+    color: var(--font-color);
+}
+
+/* learning-details responsive */
+
+@media (max-width : 992px) { 
+.learning-details .box {
+    margin-right: 0;
+    width: 100%;
+    margin-top: 0;
+}
+
+.learning-details .box:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.learning-details {
+    flex-direction: column;
+}
+}
+
+@media (max-width : 600px) {
+    th {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    td {
+        font-size: 12px;
+    }
+}
+
+/* learning-details responsive */
+
+.my-courses {
+    margin-top: 50px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.my-courses h3 {
+    margin-bottom:30px ;
+}

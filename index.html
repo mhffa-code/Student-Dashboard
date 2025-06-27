@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/webfonts/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Student Dashboard</title>
+</head>
+<body>
+        <header>
+            <i class="fa-solid fa-bars"></i>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+            <div class="profile">
+                <img src="pexels-simon-robben-55958-614810.jpg" alt="">
+                <h3 class="name">Mohamed Hany</h3>
+            </div>
+        </header>
+        <main class="main">
+        <aside class="sidebar">
+                <div class="title">
+                    <i class="fa-brands fa-pagelines"></i>
+                    <h3>Dashboard</h3>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="taps">
+                        <a class="active" href="#dashboard"><i class="fa-solid fa-house"></i><span>Overview</span></a>
+                        <a href="#attendance"><i class="fa-regular fa-clock"></i><span>Attendance</span></a>
+                        <a href="#dashboard"><i class="fa-solid fa-building-columns"></i><span>Courses</span></a>
+                        <a href="#dashboard"><i class="fa-solid fa-gear"></i> <span>Setting</span></a>
+                </div>
+        </aside>
+        <div class="main-content">
+            <div class="student-details">
+                <div class="header">
+                    <h3>Student Details</h3>
+                    <div class="right">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Duration
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button">Week</button></li>
+                            <li><button class="dropdown-item" type="button">Month</button></li>
+                            <li><button class="dropdown-item" type="button">Year</button></li>
+                        </ul>
+                    </div>
+                        <button type="button" class="btn btn-primary"><i class="fa-solid fa-download"></i>Download</button>
+                    </div>
+                </div>
+                <div class="student-data">
+                    <img src="pexels-simon-robben-55958-614810.jpg" alt="">
+                    <div class="data">
+                        <h3 class="student-name">mohamed hany</h3>
+                        <div class="registration-data row">
+                            <div class="prop col ">
+                                <span class="head">ID</span>
+                                <span>2135465</span>
+                            </div>
+                            <div class="prop col ">
+                                <span class="head">Number</span>
+                                <span>555-68-35</span>
+                            </div>
+                            <div class="prop col ">
+                                <span class="head">Email</span>
+                                <span>mo@gmail.com</span>
+                            </div>
+                            <div class="prop col ">
+                                <span class="head">Adress</span>
+                                <span>123 Elm Street</span>
+                            </div>
+                            <div class="prop col ">
+                                <span class="head">grade level</span>
+                                <span>three</span>
+                            </div>
+                            <div class="prop col ">
+                                <span class="head">Registered at</span>
+                                <span>6/27/2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="learning-details row">
+                <div class="box courses col">
+                    <div class="icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="right">
+                        <h3>Courses Count</h3>
+                        <span class="courses">5</span>
+                    </div>
+                </div>
+                <div class="box attendence col">
+                    <div class="icon">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <div class="right">
+                        <h3>Total Attendence</h3>
+                        <span class="Attendence">13</span>
+                    </div>
+                </div>
+                <div class="box absent col">
+                    <div class="icon">
+                        <i class="fa-solid fa-user-xmark"></i>
+                    </div>
+                    <div class="right">
+                        <h3>Total Absent</h3>
+                        <span class="courses">5</span>
+                    </div>
+                </div>
+                <div class="box class-days col">
+                    <div class="icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="right">
+                        <h3>Class Days</h3>
+                        <span class="courses">18</span>
+                    </div>
+                </div>
+            </div>
+            <div class="my-courses">
+                <h3>My Courses</h3>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                        <th scope="col">Number</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Lessons</th>
+                        <th scope="col">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Statistics</td>
+                        <td>15</td>
+                        <td>1</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">2</th>
+                        <td>Arithmetic</td>
+                        <td>11</td>
+                        <td>6</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">3</th>
+                        <td>Geometry</td>
+                        <td>20</td>
+                        <td>8</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">4</th>
+                        <td>Calculus</td>
+                        <td>12</td>
+                        <td>2</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">5</th>
+                        <td>Trigonometry</td>
+                        <td>9</td>
+                        <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </main>  
+    <!-- js files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="js/main.js" ></script>
+    <!-- js files -->
+</body>
+</html>
